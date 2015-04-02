@@ -8,23 +8,86 @@
     mc:Ignorable="d">
     
     <Grid x:Name="mainGrid" >
-        <!--<Image Grid.RowSpan="3" Stretch="UniformToFill"  Source="Assets/Images/MainPage.jpg" VerticalAlignment="Top" HorizontalAlignment="Center" />-->
+        
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/Images/MainPage.jpg" AlignmentY="Top" AlignmentX="Center"/>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Images/Coconut-Tree-at-Beach-Nature-Wallpaper.jpg" AlignmentY="Top" AlignmentX="Center"/>
         </Grid.Background>
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="3*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="3" Grid.Column="1">
+        <StackPanel Grid.Row="3" Grid.Column="1" Height="Auto" Margin="0, 60, 0, 0">
+            <Grid Height="220" Background="{ThemeResource AppBarItemDisabledForegroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                    
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Text="Monday" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" FontWeight="Bold" Height="30" VerticalAlignment="Center" FontSize="20" Foreground="#FFFF3434" SelectionHighlightColor="#FF57399C"/>
+                <TextBlock Text="Tuesday" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" FontWeight="Bold" Height="30" VerticalAlignment="Center" FontSize="20" Foreground="#FFFF3434" SelectionHighlightColor="#FF57399C"/>
+                <TextBlock Text="Wednessday" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Bold" Height="30" VerticalAlignment="Center" FontSize="20" Foreground="#FFFF3434" SelectionHighlightColor="#FF57399C"/>
+                <TextBlock Text="Thursday" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" FontWeight="Bold" Height="30" VerticalAlignment="Center" FontSize="20" Foreground="#FFFF3434" SelectionHighlightColor="#FF57399C"/>
+                <TextBlock Text="Friday" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" FontWeight="Bold" Height="30" VerticalAlignment="Center" FontSize="20" Foreground="#FFFF3434" SelectionHighlightColor="#FF57399C"/>
+                <TextBlock Text="Saturday" Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" FontWeight="Bold" Height="30" VerticalAlignment="Center" FontSize="20" Foreground="#FFFF3434" SelectionHighlightColor="#FF57399C"/>
+                <TextBlock Text="Sunday" Grid.Row="0" Grid.Column="6" HorizontalAlignment="Center" FontWeight="Bold" Height="30" VerticalAlignment="Center" FontSize="20" Foreground="#FFFF3434" SelectionHighlightColor="#FF57399C"/>
+            </Grid>
         </StackPanel>
+        
+        <Grid Grid.Column="1" Grid.Row="1" Height="Auto">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Background="BlueViolet" Height="45" Width="200">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/Images/Bright Sunny Day-256x256.jpg"  Width="20" Height="20" VerticalAlignment="Center"/>
+                    <TextBlock Text="Next Sunny Days" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Background="BlueViolet" Height="45" Width="200">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/Images/Cloudy Day.jpg"  Width="20" Height="20" VerticalAlignment="Center"/>
+                    <TextBlock Text="Next Cloudy Days" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Background="BlueViolet" Height="45" Width="200">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/Images/Rainy Day.png"  Width="20" Height="20" VerticalAlignment="Center"/>
+                    <TextBlock Text="Next Rainy Days" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Background="BlueViolet" Height="45" Width="200">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Assets/Images/Weekend.jpg"  Width="20" Height="20" VerticalAlignment="Center"/>
+                    <TextBlock Text="Comming Weekend" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+       
+        <TextBox HorizontalAlignment="Center" IsSpellCheckEnabled="True" VerticalAlignment="Center" Grid.Column="2" Grid.Row="0" Margin="10,0,0,0" Width="150" PlaceholderText="Enter your location" BorderThickness="4"/>
         
     </Grid>
 
