@@ -6,8 +6,32 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    
+    <Grid x:Name="mainGrid" >
+        <!--<Image Grid.RowSpan="3" Stretch="UniformToFill"  Source="Assets/Images/MainPage.jpg" VerticalAlignment="Top" HorizontalAlignment="Center" />-->
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Images/MainPage.jpg" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
+        <StackPanel Grid.Row="3" Grid.Column="1">
+        </StackPanel>
+        
     </Grid>
+
+
+
+
+
+
+
 </Page>
